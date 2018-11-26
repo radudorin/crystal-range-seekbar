@@ -476,7 +476,7 @@ public class CrystalSeekbar extends View {
         thumbWidth = (thumb != null) ? thumb.getWidth() : getResources().getDimension(R.dimen.thumb_width);
         thumbHeight = (thumb != null) ? thumb.getHeight() : getResources().getDimension(R.dimen.thumb_height);
 
-        barHeight = (thumbHeight * 0.5f) * 0.3f;
+        barHeight = getBarHeight();
         barPadding = thumbWidth * 0.5f;
 
         // set min start value
